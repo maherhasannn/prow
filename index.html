@@ -224,8 +224,10 @@
                 class="hero-bg-gradient tw-relative tw-flex tw-h-full tw-min-h-[100vh] tw-w-full tw-flex-col tw-place-content-center tw-gap-6 tw-p-[5%] max-xl:tw-place-items-center max-lg:tw-p-4"
             >
 
-                <div class="purple-bg-grad  reveal-up tw-absolute tw-left-1/2 tw--translate-1/2 tw-top-[10%] tw-h-[120px] tw-w-[120px]"
-                ></div> 
+            <div
+            class="purple-bg-grad reveal-up tw-absolute tw-left-1/2 -tw-translate-x-1/2 tw-top-[10%] tw-h-[120px] tw-w-[120px]"
+            style="opacity:1; transform:translate(0, 0); will-change:opacity, transform;"
+          ></div>
 
                 <div
                     class="tw-flex tw-flex-col tw-min-h-[60vh] tw-place-content-center tw-items-center"
@@ -233,9 +235,26 @@
                     <h2
                         class="reveal-up tw-text-center tw-text-7xl tw-font-semibold tw-uppercase tw-leading-[90px] max-lg:tw-text-4xl max-md:tw-leading-snug"
                     >
-                        <span class=""> Talk and Think💭  </span>
+                    <style>
+                        @keyframes float {
+                          0% { transform: translateY(0); }
+                          50% { transform: translateY(-8px); }
+                          100% { transform: translateY(0); }
+                        }
+                        
+                        .animated-cloud {
+                          display: inline-block;
+                          animation: float 2.5s ease-in-out infinite;
+                        }
+                        </style>
+                        
+                        <span>
+                          Talk and Think
+                          <span class="animated-cloud">💭</span>
+                        </span>
                         <br />
-                        <span class="tw-font-thin tw-font-serif"> with your data stack</span>
+                        <span class="tw-font-thin tw-font-serif">with your data stack</span>
+                        
                     </h2>
                     <div
                         class="reveal-up tw-mt-8 tw-max-w-[450px] tw-text-lg max-lg:tw-text-base tw-p-2 tw-text-center
@@ -526,7 +545,7 @@
                                 </div>
                                 <h2 class="tw-text-3xl max-md:tw-text-2xl tw-font-medium">ProwIT</h2>
                                 <p class="tw-text-base tw-leading-normal tw-text-gray-800 dark:tw-text-gray-200">
-                                    Our's is the only unified AI Interface tool brings together all your favorite chat models into one seamless platform. No more juggling between different AI systems—easily manage and interact with multiple chatbots from a single interface.
+                                    ProwIt™ connects your business systems into one smart hub, turning data into clear, actionable insights. Built for growing teams, it gets smarter as you use it—helping you understand and act on your numbers instantly.
                                 </p>
                                 <div class="tw-flex tw-items-center tw-gap-2 tw-mt-auto">
                                     <span>Learn more</span>
@@ -547,7 +566,7 @@
                                 </div>
                                 <h2 class="tw-text-3xl max-md:tw-text-2xl tw-font-medium">ProwPay</h2>
                                 <p class="tw-leading-normal tw-text-gray-800 dark:tw-text-gray-200">
-                                    Prow's LLM API offers advanced summarization, text generation, and question-answering. Easily integrate with support for JSON, HTML, Markdown, and plain text, enhancing your applications with powerful language tools.
+                                    ProwPay™ cuts fees and simplifies payments, helping you earn more with less friction. Reach 80+ countries, backed by top U.S. banks. Paired with ProwIt™, your sales and data grow smarter together.
                                 </p>
                                 <div class="tw-flex tw-items-center tw-gap-2 tw-mt-auto">
                                     <span>Learn more</span>
@@ -567,7 +586,7 @@
                                 </div>
                                 <h2 class="tw-text-3xl max-md:tw-text-2xl tw-font-medium">GUSDC</h2>
                                 <p class="tw-leading-normal tw-text-gray-800 dark:tw-text-gray-200">
-                                    Prow offers pre-built AI integrations for diverse creative tasks including image, video, music, and PDF generation, simplifying advanced feature integration into your apps.
+                                    GUSDC™ is a USD-backed, climate-positive stablecoin built into ProwPay™. It offers instant, secure payments with eco impact and AI-personalized rewards—smart, sustainable, and future-ready.
                                 </p>
                                 <div class="tw-flex tw-items-center tw-gap-2 tw-mt-auto">
                                     <span>Learn more</span>
@@ -587,9 +606,9 @@
                                 <!-- <i class="bi bi-grid-1x2-fill"></i> -->
                             </div>
                             <div class="tw-flex tw-flex-col tw-gap-4">
-                                <h2 class="tw-text-3xl max-md:tw-text-2xl tw-font-medium">Multiple AI models</h2>
+                                <h2 class="tw-text-3xl max-md:tw-text-2xl tw-font-medium">Built to Grow With You</h2>
                                 <p class="tw-leading-normal tw-text-gray-800 dark:tw-text-gray-200">
-                                    Prow supports various AI models, including ChatGPT, Gemini, Claude, Mistral and more, providing a range of advanced capabilities for various language and creative tasks.
+                                    Whether you're just starting out or scaling fast, our ecosystem evolves with your business. From smarter insights (ProwIt™) to seamless payments (ProwPay™) and sustainable currency (GUSDC™), every tool is designed to adapt, learn, and support your next move—so growth never outpaces your systems.
                                 </p>
                                 <div class="tw-flex tw-items-center tw-gap-2 tw-mt-auto">
                                     <span>Learn more</span>
