@@ -12,7 +12,7 @@ module.exports = {
 		extend: {
 			 
 			fontFamily: {
-				poly: ['"poly"', "serif"],
+				sans: ['"DM Sans"', 'sans-serif'],
 			},
 		},
 	},
