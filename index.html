@@ -40,6 +40,19 @@
             gtag('config', 'G-');
         </script>
 
+
+        <!--Fixes dark mode issue -->
+        <style>
+            :root { color-scheme: light !important; }
+            html.dark { background-color: #fff !important; color: #000 !important; }
+        </style>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+            document.documentElement.classList.remove("dark");
+            });
+        </script>
+  
+
     </head>
     <body
         class="tw-flex tw-min-h-[100vh] tw-flex-col tw-bg-[#3b6a7b] 
