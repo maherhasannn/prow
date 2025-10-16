@@ -41,16 +41,35 @@
         </script>
 
 
-        <!--Fixes dark mode issue -->
+        <!-- Force browsers to render only light mode -->
+        <meta name="color-scheme" content="light only">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- Force Tailwind and CSS to use light colors -->
         <style>
-            :root { color-scheme: light !important; }
-            html.dark { background-color: #fff !important; color: #000 !important; }
+        :root {
+            color-scheme: light;
+        }
+        html, body {
+            background-color: #fff !important;
+            color: rgb(59, 106, 123) !important;
+        }
+        html.dark, body.dark, .tw-dark {
+            background-color: #fff !important;
+            color: #000 !important;
+        }
         </style>
+
         <script>
-            document.addEventListener("DOMContentLoaded", () => {
-            document.documentElement.classList.remove("dark");
-            });
+        // Disable Tailwind dark mode *before* it applies
+        (function() {
+            const html = document.documentElement;
+            html.classList.remove("dark", "tw-dark");
+            html.setAttribute("data-theme", "light");
+        })();
         </script>
+
+
   
 
     </head>
